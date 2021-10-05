@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Loris DUCAMPS">
+    <meta name="description" content="Intro component with sign up form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Intro component with sign up form</title>
+</head>
+
+<body class="clean__transition"> 
+
+    <!-- PRELOADER -->
+    <div class="loader__wrapper">
+        <div class="loader"></div>
+        <div class="loader__section section__left"></div>
+        <div class="loader__section section__right"></div>
+    </div>
+
+    <!-- MODAL SUCCESS -->
+    <div id="myModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <span class="close">&times;</span>
+                <h2>Successful registration !!</h2>
+            </div>
+            <div class="modal__body">
+                <p>Feel free to love if you find the challenge to your liking</p></br>
+                <p>See you soon for a new challenge...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="intro__lead">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="intro__form">
+
+            <div class="intro__suggest">
+                <p><span>Try it free 7 days</span>&nbsp;<span>then $20/mo. thereafter</span></p>
+            </div>
+
+            <form method="POST" name="formulaire" id="form__signin">
+                <div class="form__inner">
+
+                    <!-- FIRST NAME-->
+                    <div class="form__group">
+                        <label for="firstname"></label>
+                        <div class="form__input__group">
+                            <input id="firstname" name="firstname" type="text" placeholder="First Name">
+                            <img class="icon--error" src="./images/icon-error.svg" alt="icon error">
+                        </div>
+                        <small class="message"></small>
+                    </div>
+
+                    <!-- LAST NAME-->
+                    <div class="form__group">
+                        <label for="lastname"></label>
+                        <div class="form__input__group">
+                            <input id="lastname" name="lastname" type="text" placeholder="Last Name">
+                            <img class="icon--error" src="./images/icon-error.svg" alt="icon error">
+                        </div>
+                        <small class="message"></small>
+                    </div>
+
+                    <!-- EMAIL ADDRESS -->
+                    <div class="form__group">
+                        <label for="email"></label>
+                        <div class="form__input__group">
+                            <input id="email" name="email" type="email" placeholder="Email Address">
+                            <img class="icon--error" src="./images/icon-error.svg" alt="icon error">
+                        </div>
+                        <small class="message"></small>
+                    </div>
+
+                    <!-- PASSWORD -->
+                    <div class="form__group">
+                        <label for="password"></label>
+                        <div class="form__input__group">
+                            <input id="password" name="password" type="password" placeholder="Password">
+                            <img class="icon--error" src="./images/icon-error.svg" alt="icon error">
+                        </div>
+                        <small class="message"></small>
+                    </div>
+
+                    <button type="submit">Claim your free trial</button>
+                    <small class="form__condition">By clicking the button, you are agreeing to our <a href="#">Terms
+                            and Services</a></small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
